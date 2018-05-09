@@ -1,2 +1,6 @@
-
-registration.iml
+*.iml
+target/
+.idea/
+.classpath
+.project
+.settings
