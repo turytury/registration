@@ -1,6 +1,7 @@
 Registration
 ================
 This is an application to provide RESTful APIs for register new member.
+
 Each item consist of
 * id
 * email
@@ -45,7 +46,7 @@ POST: /api/v1/users
     {
         "email": "String",
         "password": "String",
-        "salary": "String",
+        "salary": "String"
     }
     ```
 
