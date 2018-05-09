@@ -107,6 +107,7 @@ GET: /api/v1/users
     }
     ```
     
+
 If you want to play around, I also have Swagger documentation for each REST endpoints.
 
 [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
