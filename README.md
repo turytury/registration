@@ -30,15 +30,15 @@ mvn spring-boot:run
 ```
 
 ### RESTful API
+View all users.
 ```
 GET: /api/v1/users
 ```
-* View all users.
 
+Create new user.
 ```
 POST: /api/v1/users
 ```
-* Create new user.
 
 * **Params Required:**
 
