@@ -13,6 +13,7 @@ Each item consist of
 - Java (support Java 8 and later)
 - Maven
 - SpringBoot
+- Swagger
 - Git
 
 ### Running Project
