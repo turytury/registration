@@ -36,7 +36,7 @@ public class UserController {
             return badRequestResponse(errMsg);
         }
 
-        if(!validateEmail(user.getEmail())) return badRequestResponse("Invalid e-mail");
+        if(!validateEmail(user.getEmail())) return badRequestResponse("Invalid e-mail.");
 
         errMsg = checkPassword(user.getPassword());
         if(!StringUtils.isEmpty(errMsg)){
@@ -47,7 +47,7 @@ public class UserController {
 
         String type = getUserType(user.getSalary());
         if(StringUtils.isEmpty(type)) {
-            return badRequestResponse("Must have based salary more than 15,000 THB/month to register");
+            return badRequestResponse("Must have based salary more than 15,000 THB/month to register.");
         }
 
         User result = repository.save(new User(user.getEmail(), user.getPassword(), user.getSalary(), type));
@@ -56,14 +56,14 @@ public class UserController {
     }
 
     private String checkEmpty(UserForm user){
-        if(StringUtils.isEmpty(user.getEmail())) return "E-mail is required";
-        if(StringUtils.isEmpty(user.getPassword())) return "Password is required";
-        if(StringUtils.isEmpty(user.getSalary())) return "Salary is required";
+        if(StringUtils.isEmpty(user.getEmail())) return "E-mail is required.";
+        if(StringUtils.isEmpty(user.getPassword())) return "Password is required.";
+        if(StringUtils.isEmpty(user.getSalary())) return "Salary is required.";
         return "";
     }
 
     private String checkPassword(String password){
-        if(password.length() < 8) return "Password must be at least 8 characters";
+        if(password.length() < 8) return "Password must be at least 8 characters.";
         return "";
     }
 
