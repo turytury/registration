@@ -31,7 +31,7 @@ mvn spring-boot:run
 ```
 
 ### RESTful API
-**Create new user.**
+**Create new user**
 ```
 POST: /api/v1/users
 ```
@@ -72,7 +72,7 @@ POST: /api/v1/users
     ```
 
 
-**View all users.**
+**View all users**
 ```
 GET: /api/v1/users
 ```
